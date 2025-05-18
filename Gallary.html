@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img/LOGO01.png" type="image/png">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="">Doctor Harisingh Gour Central University Sagar</a></li> 
+    </nav></div>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Img\logoA1-modified.png" alt="Government Logo" class="gov-logo">
+            <div>
+                <p class="subtitle">iOCR Lab: intelligent Optimizing Cloud Resource provisioning Laboratory</p>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Navbar Section -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Research.html">Research Area</a></li> 
+                <li class="dropdown">
+                    <a href="Publication.html">Publications</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Journals_publ.html">Journals</a></li> 
+                        <li><a href="book_publ.html">Book Chapters</a></li>
+                        <li><a href="Confrence.html">Conference Proceedings</a></li>
+                        <li><a href="prof_dev.html">Prof_Dev</a></li>
+                    </ul>
+                </li>
+            <li><a href="G&p.html">Group & People</a></li>
+            <li><a href="News.html">News & Awards</a></li>
+            <li><a href="Gallary.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+     <div class="main-container">
+        <!-- Slider Section -->
+        <div class="slider-container">
+            <img src="Img\Untitled design (2).png" alt="Slider Image 1" class="slider-image active">
+            <img src="Img\IMG_20250508_104723.jpg" alt="Slider Image 2" class="slider-image">
+            <img src="Img\IMG_20250508_104626.jpg" alt="Slider Image 3" class="slider-image">
+            <img src="Img/slider01.png" alt="Slider Image 4" class="slider-image">
+           
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.slider-image');
+            
+            function changeImage() {
+                images[currentIndex].classList.remove('active'); // Remove active class from current image
+                currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+                images[currentIndex].classList.add('active'); // Add active class to the next image
+            }
+            
+            setInterval(changeImage, 5000); // Change image every 5 seconds
+            </script>
+        <!-- Container1 Section -->
+        <div class="container1">
+            <div class="text-content">
+                <h2>Dr. Ranjit Rajak</h2>
+                <p>Assistant Professor</p>
+                <p>Department of Computer Science and Applications</p>
+                <p>School of Mathematical and Physical Sciences (SMPS)</p>
+                <p>Dr. Harisingh Gour Vishwavidyalaya, Sagar</p>
+                <p>Mobile: 9479983806</p>
+                <p>Email: ranjit.jnu@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    
+  
+</section>
+  
+    <section class="tabs">
+        <input type="radio" name="tabs" id="tab1" checked>
+        <input type="radio" name="tabs" id="tab2">
+        <input type="radio" name="tabs" id="tab3">
+        <input type="radio" name="tabs" id="tab4">
+        <input type="radio" name="tabs" id="tab5">
+        <input type="radio" name="tabs" id="tab6">
+    
+        <div class="buttons">
+          <label for="tab1">Lab Photos</label>
+          <label for="tab2">Department Photos</label>
+          <label for="tab3">Research Students</label>
+          <label for="tab4">Session Photos</label>
+          <label for="tab5">Achievements</label>
+          <label for="tab6">Others</label>
+        </div>
+    
+        <div class="content">
+          <div class="tab" id="content1">
+            <div class="gallery">
+              <img src="Img\lab1.jpg" alt="Lab 1">
+              <img src="Img\lab2.jpg" alt="Lab 2">
+              <img src="Img\lab3.jpg" alt="Lab 3">
+              <img src="Img\lab4.jpg" alt="Lab 4">
+            </div>
+          </div>
+    
+          <div class="tab" id="content2">
+            <div class="gallery">
+              <img src="Img\dep3.jpg" alt="Department 1">
+              <img src="Img\dep4.jpg" alt="Department 2">
+               <img src="Img\dep1.jpg" alt="Department 3">
+              <img src="Img\dep2.jpg" alt="Department 4">
+            </div>
+          </div>
+    
+          <div class="tab" id="content3">
+            <div class="gallery">
+              <img src="Img\Rs1.jpg" alt="Student 1">
+              <img src="Img\lab2.jpg" alt="Student 2">
+              <img src="Img\Rs3.jpg" alt="Student 3">
+              <img src="Img\lab4.jpg" alt="Student 4">
+            </div>
+          </div>
+    
+          <div class="tab" id="content4">
+            <div class="gallery">
+              <img src="Img\Lab11.jpg" alt="Session 1">
+              <img src="Img\lab12.jpg" alt="Session 2">
+              <img src="Img\lab13.jpg" alt="Session 1">
+              <img src="Img\lab14.jpg" alt="Session 2">
+            </div>
+          </div>
+    
+          <div class="tab" id="content5">
+            <div class="gallery">
+              <img src="Img\achi1.jpg" alt="Achievement 1">
+              <img src="Img\achi2.jpg" alt="Achievement 2">
+              <img src="Img\achi3.jpg" alt="Achievement 3">
+              <img src="Img\achi4.jpg" alt="Achievement 4">
+            </div>
+          </div>
+    
+          <div class="tab" id="content6">
+            <div class="gallery">
+              <img src="Img\ort2.jpg" alt="Other 1">
+              <img src="Img\ort3.jpg" alt="Other 2">
+              <img src="Img\ort4.jpg" alt="Other 3">
+              <img src="Img\ort5.jpg" alt="Other 4">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container2">
+        <div class="main-heading">
+            <h1>Professional Affiliations & Leadership</h1>
+            <div class="heading-line"></div>
+        </div>
+    
+        <div class="slider-container2">
+            <div class="slider">
+                 <div class="slide"><img src="Img\slider1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="Img\slider2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="Img\Slider3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="Img\gallary012.jpg" alt="Image 4"></div>
+
+              <div class="slide"><img src="Img\Slider3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="Img\gallary012.jpg" alt="Image 4"></div>
+           <div class="slide"><img src="Img\slider1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="Img\slider2.jpg" alt="Image 2"></div>
+          
+            
+            </div>
+            <div class="arrow prev">❮</div>
+            <div class="arrow next">❯</div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+            const prevBtn = document.querySelector(".prev");
+            const nextBtn = document.querySelector(".next");
+            const slidesPerView = 4;
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+            const maxIndex = Math.ceil(totalSlides / slidesPerView) - 1;
+    
+            function updateSlider() {
+                const offset = -(currentIndex * 100);
+                slider.style.transform = `translateX(${offset}%)`;
+            }
+    
+            prevBtn.addEventListener("click", () => {
+                currentIndex = currentIndex > 0 ? currentIndex - 1 : maxIndex;
+                updateSlider();
+            });
+    
+            nextBtn.addEventListener("click", () => {
+                currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+                updateSlider();
+            });
+    
+            setInterval(() => {
+                currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+                updateSlider();
+            }, 5000);
+        });
+    </script>
+
+   <!-- Map Section -->
+   <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8680.603183683425!2d78.77496568264726!3d23.827698911486163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f0bc9db8fc188e!2sDr.+Harisingh+Gour+University!5e0!3m2!1sen!2sin!4v1530796101351" 
+            frameborder="0" allowfullscreen></iframe>
+</section>
+      
+    <!-- Footer -->
+   <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Associate Professor</strong></p>
+                <p>Dept. of Computer Science and Applications</p>
+                <p>Dr. Harisingh Gour Central University, Sagar, M.P., India</p>
+                <p>Email: <a href="mailto:ranjit.jnu@gmail.com" aria-label="Email Contact">ranjit.jnu@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919479983806" aria-label="Call Contact">+91 9479983806</a></p>
+            </div>
+            <div class="footer-section profiles">
+                <h4>Academic Profiles</h4>
+                <ul>
+                    <li><a href="https://scholar.google.co.in/citations?user=9DZDbJEAAAAJ&hl=en" target="_blank" aria-label="Google Scholar Profile">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/0000-0003-2746-3278" target="_blank" aria-label="Scopus Profile">ORCID</a></li>
+                    <li><a href="https://dhsgsu.irins.org/profile/120003" target="_blank" aria-label="ORCID Profile">IRINS</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ranjit.rajak.549" target="_blank" aria-label="Follow on Facebook"><img src="Img\fbb.png" alt="Facebook Icon"></a>
+                    <a href="https://github.com/..." target="_blank" aria-label="Follow on GitHub"><img src="Img\git.png" alt="GitHub Icon"></a>
+                    <a href="https://www.linkedin.com/in/..." target="_blank" aria-label="Follow on LinkedIn"><img src="Img\fb.png" alt="LinkedIn Icon"></a>
+                    <a href="https://scholar.google.co.in/citations?user=9DZDbJEAAAAJ&hl=en" target="_blank" aria-label="Google Scholar Profile"><img src="Img\gs.png" alt="Google Scholar Icon"></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Dr. Ranjit Rajak. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+      

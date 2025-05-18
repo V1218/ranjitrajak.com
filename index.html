@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img\logoA1-modified.png" type="image/png">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="">Doctor Harisingh Gour Central University Sagar</a></li> 
+    </nav></div>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Img\logoA1-modified.png" alt="Government Logo" class="gov-logo">
+            <div>
+                <p class="subtitle">iOCR Lab: intelligent Optimizing Cloud Resource provisioning Laboratory</p>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Navbar Section -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Research.html">Research Area</a></li> 
+                <li class="dropdown">
+                    <a href="Publication.html">Publications</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Journals_publ.html">Journals</a></li> 
+                        <li><a href="book_publ.html">Book Chapters</a></li>
+                        <li><a href="Confrence.html">Conference Proceedings</a></li>
+                        <li><a href="prof_dev.html">Prof_Dev</a></li>
+                    </ul>
+                </li>
+            <li><a href="G&p.html">Group & People</a></li>
+            <li><a href="News.html">News & Awards</a></li>
+            <li><a href="Gallary.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-container">
+        <!-- Slider Section -->
+        <div class="slider-container">
+            <img src="Img\Untitled design (2).png" alt="Slider Image 1" class="slider-image active">
+            <img src="Img\IMG_20250508_104723.jpg" alt="Slider Image 2" class="slider-image">
+            <img src="Img\IMG_20250508_104626.jpg" alt="Slider Image 3" class="slider-image">
+            <img src="Img/slider01.png" alt="Slider Image 4" class="slider-image">
+           
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.slider-image');
+            
+            function changeImage() {
+                images[currentIndex].classList.remove('active'); // Remove active class from current image
+                currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+                images[currentIndex].classList.add('active'); // Add active class to the next image
+            }
+            
+            setInterval(changeImage, 5000); // Change image every 5 seconds
+            </script>
+        <!-- Container1 Section -->
+        <div class="container1">
+            <div class="text-content">
+                <h2>Dr. Ranjit Rajak (Ph.D., JNU)</h2>
+                <p>Assistant Professor</p>
+                <p>Department of Computer Science and Applications(DCSA)</p>
+                <p>School of Mathematical and Physical Sciences (SMPS)</p>
+                <p>Dr.Harisingh Gour Central University(DHSGCU),</p>
+                <p>Mobile: 9479983806</p>
+                <p>Email: ranjit.jnu@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    
+  
+</section>
+
+<div class="container">
+    <div class="box left-box">
+        <h3>Active Reviewer in International Journals (SCIE Indexed):</h3>
+        <ul>
+            <li>IEEE Transaction on Cloud Computing, New York, [IF 5.96].</li>
+            <li>IEEE Transaction on Mobile Computing, New York [IF: 4.3].</li>
+            <li>Peer to Peer Networking & Application, Springer, [IF: 4.2]</li>
+            <li>Cluster Computing, Springer, [IF: 4.4]</li>
+            <li>Computing, Springer, [IF: 3.7]</li>
+            <li>Wireless Personal Communication (WPC), Springer, [IF: 2.2]</li>
+            <li>International Journal of Machine Learning and Cybernetics, Springer, [IF: 3.8]</li>
+            <li>Transactions on Emerging Telecommunications Technologies Journal, Wiley, [IF: 2.5]</li>
+        </ul>
+    </div>
+    <div class="box right-box">
+        <h3>LATEST NEWS</h3>
+        <div class="news-content">
+            <li>Published a novel strategy for deterministic workflow scheduling with load balancing in Cluster Computing, Springer (SCIE, IF: 4.4, 2024).</li>
+            <li>Critical review on load balancing methods in cloud computing published in Wireless Personal Communication, Springer (SCIE, IF: 2.05, 2024).</li>
+            <li>Presented a hybrid method for load balancing optimization at the Second International Conference on Advanced Computing (AMRIT-2024), Assam Central University, Nov 2024.</li>
+            <li>Delivered an invited talk on "Imperative of Research Paper Framework" at Infinity Management and Engineering College, Sagar, April 2024.</li>
+            <li>Multiple papers submitted to high-impact journals, including Cluster Computing and International Journal of Machine Learning and Cybernetics, Springer (Under Review, 2025).</li>
+            <li>Scheduled to deliver an invited talk on "Optimization of Resource Provisioning using Machine Learning" at SVN University, Sagar, Feb 2025.</li>
+            <li>Presented research on task offloading algorithms in Mobile Edge Computing at ICASET-2024, Lucknow, July 2024.</li>
+            <li>Makespan Optimization Technique for scientific workflows presented at IDEA 2024, Bhopal, June 2024.</li>
+        </div>
+    </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let newsBox = document.querySelector(".news-content");
+        let newsItems = document.querySelector(".news-items");
+
+        function scrollNews() {
+            if (newsBox.scrollTop + newsBox.clientHeight >= newsItems.clientHeight) {
+                newsBox.scrollTop = 0; // Reset scrolling
+            } else {
+                newsBox.scrollTop += 1; // Scroll smoothly
+            }
+        }
+
+        setInterval(scrollNews, 50); // Adjust speed
+    });
+</script>
+</div>
+<div class="container2">
+    <div class="main-heading">
+        <h1>Professional Affiliations & Leadership</h1>
+        <div class="heading-line"></div>
+    </div>
+
+    <div class="slider-container2">
+        <div class="slider">
+            <div class="slide"><img src="Img\slider1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="Img\slider2.jpg" alt="Image 2"></div>
+            <div class="slide"><img src="Img\Slider3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="Img\gallary012.jpg" alt="Image 4"></div>
+
+              <div class="slide"><img src="Img\Slider3.jpg" alt="Image 3"></div>
+            <div class="slide"><img src="Img\gallary012.jpg" alt="Image 4"></div>
+           <div class="slide"><img src="Img\slider1.jpg" alt="Image 1"></div>
+            <div class="slide"><img src="Img\slider2.jpg" alt="Image 2"></div>
+          
+        
+        </div>
+        <div class="arrow prev">❮</div>
+        <div class="arrow next">❯</div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+        const slidesPerView = 4;
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        const maxIndex = Math.ceil(totalSlides / slidesPerView) - 1;
+
+        function updateSlider() {
+            const offset = -(currentIndex * 100);
+            slider.style.transform = `translateX(${offset}%)`;
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : maxIndex;
+            updateSlider();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+            updateSlider();
+        });
+
+        setInterval(() => {
+            currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+            updateSlider();
+        }, 5000);
+    });
+</script>
+
+    <!-- Membership Sections -->
+    <div class="membership-section">
+        <h2>Experience (More than 12 Years)</h2>
+        <ul class="membership-list">
+            <li><span class="year">2013</span> – Assistant Professor Dr. Harisingh Gour Central University</li>
+            <li><span class="year">DCSA</span> –  Department of Computer Science and Applications</li>
+            <li><span class="year">Ongoing</span> – Sagar, MP (31st May 2013- Onwards).</li>
+        </ul>
+    </div>
+
+    <div class="membership-section">
+         <h2>Achievements</h2>
+        <ul class="membership-list">
+            <li><span class="year">2000</span> – Qualified National Mathematics Olympiad Contest organized by All India School Mathematics Teachers Association.</li>
+            <li><span class="year">2004</span> – Qualified Competence in Software Technology (CST)-E level conducted by C-DAC, Pune.</li>
+            <li><span class="year">2012</span> – Qualified JRF and NET in Computer Science and Application Conducted by UGC, New New Delhi. </li>
+        </ul>
+    </div>
+
+    <div class="membership-section">
+         <h2>Research Area:</h2>
+        <ul class="membership-list">
+            <li>High Performance Computing, Scheduling  Algorithms</li>
+            <li>Machine Learning, Computational Intelligence  </li>
+        </ul>
+         <h2>Subjects Taught::</h2>
+        <ul class="membership-list">
+            <li>Data Structures ,Programming, Design and Analysis of Algorithm</li>
+            <li>Digital Electronic, Cloud Computing. </li>
+        </ul>
+    </div>
+</div>
+
+
+ 
+
+
+   <!-- Map Section -->
+   <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8680.603183683425!2d78.77496568264726!3d23.827698911486163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f0bc9db8fc188e!2sDr.+Harisingh+Gour+University!5e0!3m2!1sen!2sin!4v1530796101351" 
+            frameborder="0" allowfullscreen></iframe>
+</section>
+      
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <p><strong>Associate Professor</strong></p>
+                <p>Dept. of Computer Science and Applications</p>
+                <p>Dr. Harisingh Gour Central University, Sagar, M.P., India</p>
+                <p>Email: <a href="mailto:ranjit.jnu@gmail.com" aria-label="Email Contact">ranjit.jnu@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919479983806" aria-label="Call Contact">+91 9479983806</a></p>
+            </div>
+            <div class="footer-section profiles">
+                <h4>Academic Profiles</h4>
+                <ul>
+                    <li><a href="https://scholar.google.co.in/citations?user=9DZDbJEAAAAJ&hl=en" target="_blank" aria-label="Google Scholar Profile">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/0000-0003-2746-3278" target="_blank" aria-label="Scopus Profile">ORCID</a></li>
+                    <li><a href="https://dhsgsu.irins.org/profile/120003" target="_blank" aria-label="ORCID Profile">IRINS</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>Connect With Me</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ranjit.rajak.549" target="_blank" aria-label="Follow on Facebook"><img src="Img\fbb.png" alt="Facebook Icon"></a>
+                    <a href="https://github.com/..." target="_blank" aria-label="Follow on GitHub"><img src="Img\git.png" alt="GitHub Icon"></a>
+                    <a href="https://www.linkedin.com/in/..." target="_blank" aria-label="Follow on LinkedIn"><img src="Img\fb.png" alt="LinkedIn Icon"></a>
+                    <a href="https://scholar.google.co.in/citations?user=9DZDbJEAAAAJ&hl=en" target="_blank" aria-label="Google Scholar Profile"><img src="Img\gs.png" alt="Google Scholar Icon"></a>
+                </div>
+                   <div class="counter-container">
+        <div class="counter-box">
+            <i class="icon fas fa-flag"></i>
+            <h2 id="india_visits">0</h2>
+            <p>Indian Visitors</p>
+        </div>
+        <div class="counter-box">
+            <i class="icon fas fa-plane"></i>
+            <h2 id="outside_visits">0</h2>
+            <p>Foreign Visitors</p>
+        </div>
+        <div class="counter-box">
+            <i class="icon fas fa-globe"></i>
+            <h2 id="total_visits">0</h2>
+            <p>Total Visitors</p>
+        </div>
+    </div>
+
+<script>
+    // Visitor.js
+
+// Function to fetch user's IP info
+async function getVisitorInfo() {
+    try {
+        const response = await fetch('https://ipapi.co/json/');
+        return await response.json();
+    } catch (error) {
+        console.error('Error fetching visitor info:', error);
+        return null;
+    }
+}
+
+// Function to update counts
+function updateCounters(visitorCountry) {
+    let indiaVisits = parseInt(localStorage.getItem('india_visits')) || 0;
+    let outsideVisits = parseInt(localStorage.getItem('outside_visits')) || 0;
+    let totalVisits = parseInt(localStorage.getItem('total_visits')) || 0;
+
+    if (visitorCountry === 'IN') {
+        indiaVisits += 1;
+    } else {
+        outsideVisits += 1;
+    }
+    totalVisits += 1;
+
+    // Save updated counts
+    localStorage.setItem('india_visits', indiaVisits);
+    localStorage.setItem('outside_visits', outsideVisits);
+    localStorage.setItem('total_visits', totalVisits);
+
+    // Update the HTML
+    document.getElementById('india_visits').innerText = indiaVisits;
+    document.getElementById('outside_visits').innerText = outsideVisits;
+    document.getElementById('total_visits').innerText = totalVisits;
+}
+
+// On page load
+window.addEventListener('load', async () => {
+    const visitorInfo = await getVisitorInfo();
+    if (visitorInfo && visitorInfo.country) {
+        updateCounters(visitorInfo.country);
+    } else {
+        console.error('Could not determine visitor country');
+    }
+});
+
+</script> 
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Dr. Ranjit Rajak. All rights reserved.</p>
+        </div>
+    </footer>
+      
+</body>
+</html>
+      
+
+
