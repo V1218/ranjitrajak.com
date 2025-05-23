@@ -32,8 +32,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="Journals_publ.html">Journals</a></li> 
                         <li><a href="book_publ.html">Book Chapters</a></li>
-                        <li><a href="Confrence.html">Conference Proceedings</a></li>
-                        <li><a href="prof_dev.html">Prof_Dev</a></li>
+                        <li><a href="Confrence.html">Conference</a></li>
                     </ul>
                 </li>
             <li><a href="G&p.html">Group & People</a></li>
@@ -51,7 +50,7 @@
             <h2>About Dr. Ranjit Rajak</h2>
             <p>Dr. Ranjit Rajak is an accomplished academic and researcher in the field of Computer Science and Applications. Currently serving as an Assistant Professor at Dr. Harisingh Gour Vishwavidyalaya, Sagar, he has made significant contributions in areas such as Computer Science Hardware and Architecture, Wireless Sensor Networks (WSN), Cloud Computing, Parallel Computing, Internet of Things (IoT), Load Balancing, and Scheduling Problems.</p>
           
-            <p>Dr. Rajak holds a Ph.D. in Computer Science and Technology from Jawaharlal Nehru University (JNU), New Delhi, and has a strong academic background with M.Tech and MCA degrees from the same institution. His dedication to teaching and research is evident through his numerous publications, research projects, and active participation in professional and academic committees.</p>
+            <p>Dr. Rajak holds a Ph.D. in Computer Science and Technology from Jawaharlal Nehru University (JNU), New Delhi, and has a strong academic background with M.Tech and MCA degrees from the same institution. He completed his B.C.A (Bachelor of Computer Applications) from CCS Meerut University, Meerut, U.P., India during 2001–2004. His dedication to teaching and research is evident through his numerous publications, research projects, and active participation in professional and academic committees.</p>
           
             <p>Beyond his academic endeavors, Dr. Rajak is an esteemed member of various professional bodies, including the International Association of Engineers (IAENG), Computer Society of India (CSI), and the Academy & Industry Research Collaboration Center (AIRCC). He continues to inspire students and peers alike through his commitment to advancing the frontiers of computer science.</p>
     </div>
@@ -76,7 +75,7 @@
             </div>
         </div>
         <div class="slider-container">
-            <img src="profile1.jpg" class="slider-image active">
+            <img src="Img\img01.jpg" class="slider-image active">
             <img src="profile2.jpg" class="slider-image">
             <img src="profile3.jpg" class="slider-image">
         </div>
@@ -94,68 +93,14 @@
                 </div>
                 <div class="text_align_center">
                     <div class="full">
-                        <img src="achievement.jpg" alt="Achievements">
+                        <img src="Img\img02.jpg" alt="Achievements">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container2">
-        <div class="main-heading">
-            <h1>Professional Affiliations & Leadership</h1>
-            <div class="heading-line"></div>
-        </div>
 
-        <div class="slider-container2">
-            <div class="slider">
-                <div class="slide"><img src="Img\slider1.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="Img\slider2.jpg" alt="Image 2"></div>
-                <div class="slide"><img src="Img\Slider3.jpg" alt="Image 3"></div>
-                <div class="slide"><img src="Img\slider4.jpg" alt="Image 4"></div>
-            
-                <div class="slide"><img src="Img\slider1.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="Img\slider2.jpg" alt="Image 2"></div>
-                <div class="slide"><img src="Img\Slider3.jpg" alt="Image 3"></div>
-                <div class="slide"><img src="Img\slider4.jpg" alt="Image 4"></div>
-            </div>
-            <div class="arrow prev">❮</div>
-            <div class="arrow next">❯</div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const slider = document.querySelector(".slider");
-            const slides = document.querySelectorAll(".slide");
-            const prevBtn = document.querySelector(".prev");
-            const nextBtn = document.querySelector(".next");
-            const slidesPerView = 4;
-            let currentIndex = 0;
-            const totalSlides = slides.length;
-            const maxIndex = Math.ceil(totalSlides / slidesPerView) - 1;
-
-            function updateSlider() {
-                const offset = -(currentIndex * 100);
-                slider.style.transform = `translateX(${offset}%)`;
-            }
-
-            prevBtn.addEventListener("click", () => {
-                currentIndex = currentIndex > 0 ? currentIndex - 1 : maxIndex;
-                updateSlider();
-            });
-
-            nextBtn.addEventListener("click", () => {
-                currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
-                updateSlider();
-            });
-
-            setInterval(() => {
-                currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
-                updateSlider();
-            }, 5000);
-        });
-    </script>
 
         <!-- Membership Sections -->
         <div class="membership-section">
@@ -170,12 +115,12 @@
         <div class="membership-section">
             <h2>Membership in Committees</h2>
             <ul class="membership-list">
-                <li> – RAC Member, Dept. of Mathematics and Stats, Dr. H.S.Gour Central University, Sagar</li>
-                <li> – Board of Studies (BOS), Dr. H.S.Gour Central University, Sagar</li>
-                <li> – Board of Studies (BOS), Girl’s PG College, Sagar</li>
-                <li> –	International Association of Engineers (IAENG), Life Time (Membership id 187064)</li>
-                <li> –	Computer Society of India (CSI)</li>
-                <li> –	Academy & Industry Research Collaboration Center (AIRCC), Life Time (Membership id 128858)</li>
+                <li>  RAC Member, Dept. of Mathematics and Stats, Dr. H.S.Gour Central University, Sagar</li>
+                <li>  Board of Studies (BOS), Dr. H.S.Gour Central University, Sagar</li>
+                <li>  Board of Studies (BOS), Girl’s PG College, Sagar</li>
+                <li>  International Association of Engineers (IAENG), Life Time (Membership id 187064)</li>
+                <li>  Computer Society of India (CSI)</li>
+                <li>  Academy & Industry Research Collaboration Center (AIRCC), Life Time (Membership id 128858)</li>
 
             </ul>
         </div>
@@ -210,7 +155,6 @@
 <footer class="footer">
         <div class="footer-container">
             <div class="footer-section contact">
-                <p><strong>Associate Professor</strong></p>
                 <p>Dept. of Computer Science and Applications</p>
                 <p>Dr. Harisingh Gour Central University, Sagar, M.P., India</p>
                 <p>Email: <a href="mailto:ranjit.jnu@gmail.com" aria-label="Email Contact">ranjit.jnu@gmail.com</a></p>

@@ -32,8 +32,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="Journals_publ.html">Journals</a></li> 
                         <li><a href="book_publ.html">Book Chapters</a></li>
-                        <li><a href="Confrence.html">Conference Proceedings</a></li>
-                        <li><a href="prof_dev.html">Prof_Dev</a></li>
+                        <li><a href="Confrence.html">Conference </a></li>
                     </ul>
                 </li>
             <li><a href="G&p.html">Group & People</a></li>
@@ -42,32 +41,45 @@
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
-    
+    <style>.tick-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tick-list li {
+    margin: 5px 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.tick-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green; /* You can use #28a745 or another shade */
+    font-weight: bold;
+}
+</style>
      <!-- Membership Sections -->
-     <div class="membership-section">
-        <h2><b>Research Area</b></h2>
-        <ul class="membership-list">
-            <li><span class="year"></span> – Parallel Computing</li>
-            <li><span class="year"></span> – Machine Learning</li>
-            <li><span class="year"></span> – Evolutionary Algorithms</li>
-            <li><span class="year"></span> – Scheduling Algorithms</li>	
-            <li><span class="year"></span> – Cloud Computing</li>	
-            <li><span class="year"></span> – Fog Computing</li>	
-            <li><span class="year"></span> – HPC</li>	
-        </ul>
-    </div>
-
-    <div class="membership-section">
-         <h2><b>Subjects Taught </b></h2>
-        <ul class="membership-list">
-            <li><span class="year"></span> – Data Structures  </li>
-            <li><span class="year"></span> – C Language </li>
-            <li><span class="year"></span> – OOPS( through C++ and Java)</li>
-            <li><span class="year"></span> – Design and Analysis of Algorithm </li>
-
-        </ul>
-    </div>
+<div class="membership-section">
+    <h2><b>Research Area</b></h2>
+    <ul class="tick-list">
+        <li> High Performance Computing</li>
+        <li> Scheduling Algorithms</li>
+        <li> Machine Learning</li>
+        <li> Computational Intelligence</li>
+        <li> Cloud Computing</li>
+    </ul>
 </div>
+
+<div class="membership-section">
+    <h2><b>Subjects Taught</b></h2>
+    <ul class="tick-list">
+        <li> Data Structures, Programming, Design and Analysis of Algorithms</li>
+        <li> Digital Electronics, Cloud Computing</li>
+    </ul>
+</div>
+
    <!-- Map Section -->
    <section class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8680.603183683425!2d78.77496568264726!3d23.827698911486163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f0bc9db8fc188e!2sDr.+Harisingh+Gour+University!5e0!3m2!1sen!2sin!4v1530796101351" 
@@ -78,7 +90,6 @@
    <footer class="footer">
         <div class="footer-container">
             <div class="footer-section contact">
-                <p><strong>Associate Professor</strong></p>
                 <p>Dept. of Computer Science and Applications</p>
                 <p>Dr. Harisingh Gour Central University, Sagar, M.P., India</p>
                 <p>Email: <a href="mailto:ranjit.jnu@gmail.com" aria-label="Email Contact">ranjit.jnu@gmail.com</a></p>

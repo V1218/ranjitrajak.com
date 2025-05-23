@@ -32,8 +32,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="Journals_publ.html">Journals</a></li> 
                         <li><a href="book_publ.html">Book Chapters</a></li>
-                        <li><a href="Confrence.html">Conference Proceedings</a></li>
-                        <li><a href="prof_dev.html">Prof_Dev</a></li>
+                        <li><a href="Confrence.html">Conference</a></li>
                     </ul>
                 </li>
             <li><a href="G&p.html">Group & People</a></li>
@@ -49,7 +48,7 @@
             <img src="Img\Untitled design (2).png" alt="Slider Image 1" class="slider-image active">
             <img src="Img\IMG_20250508_104723.jpg" alt="Slider Image 2" class="slider-image">
             <img src="Img\IMG_20250508_104626.jpg" alt="Slider Image 3" class="slider-image">
-            <img src="Img/slider01.png" alt="Slider Image 4" class="slider-image">
+            <img src="Img\img01.jpg" alt="Slider Image 4" class="slider-image">
            
         </div>
         <script>
@@ -69,11 +68,12 @@
             <div class="text-content">
                 <h2>Dr. Ranjit Rajak (Ph.D., JNU)</h2>
                 <p>Assistant Professor</p>
-                <p>Department of Computer Science and Applications(DCSA)</p>
-                <p>School of Mathematical and Physical Sciences (SMPS)</p>
-                <p>Dr.Harisingh Gour Central University(DHSGCU),</p>
+                <p>Department of Computer Science and Applications</p>
+                <p>School of Mathematical and Physical Sciences</p>
+                <p>Dr.Harisingh Gour Central University</p>
                 <p>Mobile: 9479983806</p>
                 <p>Email: ranjit.jnu@gmail.com</p>
+                <a href="cv/Dr-Ranjit-Rajak-CV.pdf" download class="download-btn">Download CV</a>
             </div>
         </div>
     </div>
@@ -81,51 +81,114 @@
   
 </section>
 
+<style>
+   
+
+    .left-box li, .right-box li {
+        margin-bottom: 8px;
+    }
+
+   .right-box .news-content {
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+    }
+
+    .scrolling-news {
+        display: inline-block;
+        animation: scroll-up 40s linear infinite;
+        animation-delay: 1s; /* 1 second delay before scrolling starts */
+    }
+
+    @keyframes scroll-up {
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+
+      .tick-list {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .tick-list li {
+        margin: 5px 0;
+        padding-left: 1.5em;
+        position: relative;
+    }
+
+    .tick-list li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: green; /* You can use #28a745 or another shade */
+        font-weight: bold;
+    }
+
+    @keyframes scroll-up {
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+
+    h3 {
+        color: #004080;
+        margin-bottom: 10px;
+    }
+</style>
+
 <div class="container">
     <div class="box left-box">
         <h3>Active Reviewer in International Journals (SCIE Indexed):</h3>
-        <ul>
-            <li>IEEE Transaction on Cloud Computing, New York, [IF 5.96].</li>
-            <li>IEEE Transaction on Mobile Computing, New York [IF: 4.3].</li>
-            <li>Peer to Peer Networking & Application, Springer, [IF: 4.2]</li>
-            <li>Cluster Computing, Springer, [IF: 4.4]</li>
-            <li>Computing, Springer, [IF: 3.7]</li>
-            <li>Wireless Personal Communication (WPC), Springer, [IF: 2.2]</li>
-            <li>International Journal of Machine Learning and Cybernetics, Springer, [IF: 3.8]</li>
-            <li>Transactions on Emerging Telecommunications Technologies Journal, Wiley, [IF: 2.5]</li>
+        <ul class="news-content">
+            <li><span class="year">✔ </span>IEEE Transaction on Cloud Computing, New York, [IF 5.96]</li>
+            <li><span class="year">✔ </span>IEEE Transaction on Mobile Computing, New York [IF: 4.3]</li>
+            <li><span class="year">✔ </span>Peer to Peer Networking & Application, Springer [IF: 4.2]</li>
+            <li><span class="year">✔ </span>Cluster Computing, Springer [IF: 4.4]</li>
+            <li><span class="year">✔ </span>Computing, Springer [IF: 3.7]</li>
+            <li><span class="year">✔ </span>Wireless Personal Communication (WPC), Springer [IF: 2.2]</li>
+            <li><span class="year">✔ </span>International Journal of Machine Learning and Cybernetics, Springer [IF: 3.8]</li>
+            <li><span class="year">✔ </span>Transactions on Emerging Telecommunications Technologies, Wiley [IF: 2.5]</li>
         </ul>
     </div>
+
     <div class="box right-box">
         <h3>LATEST NEWS</h3>
         <div class="news-content">
-            <li>Published a novel strategy for deterministic workflow scheduling with load balancing in Cluster Computing, Springer (SCIE, IF: 4.4, 2024).</li>
-            <li>Critical review on load balancing methods in cloud computing published in Wireless Personal Communication, Springer (SCIE, IF: 2.05, 2024).</li>
-            <li>Presented a hybrid method for load balancing optimization at the Second International Conference on Advanced Computing (AMRIT-2024), Assam Central University, Nov 2024.</li>
-            <li>Delivered an invited talk on "Imperative of Research Paper Framework" at Infinity Management and Engineering College, Sagar, April 2024.</li>
-            <li>Multiple papers submitted to high-impact journals, including Cluster Computing and International Journal of Machine Learning and Cybernetics, Springer (Under Review, 2025).</li>
-            <li>Scheduled to deliver an invited talk on "Optimization of Resource Provisioning using Machine Learning" at SVN University, Sagar, Feb 2025.</li>
-            <li>Presented research on task offloading algorithms in Mobile Edge Computing at ICASET-2024, Lucknow, July 2024.</li>
-            <li>Makespan Optimization Technique for scientific workflows presented at IDEA 2024, Bhopal, June 2024.</li>
+            <ul class="scrolling-news">
+                <li><span class="year">✔ </span>-Submitted paper on AI techniques for workflow scheduling to Journal of Ambient Intelligence and Humanized Computing (Scopus, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted GNNSA algorithm paper to Cluster Computing, Springer (SCIE, IF: 4.4, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted GNN + RL integrated scheduling framework to Int. Journal of Machine Learning and Cybernetics (SCIE, IF: 4.4, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted EMMCA method using Cuckoo Search to Evolving Systems, Springer (SCIE, IF: 4.4, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted critical survey on WSN localization to Wireless Personal Communication (SCIE, IF: 1.9, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted taxonomy of workflow scheduling to International Journal of System Assurance Engineering (SCIE, IF: 2.2, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted multi-objective workflow scheduling performance paper to Journal of Supercomputing (SCIE, IF: 3.8, 2025).</li>
+                <li><span class="year">✔ </span>-Submitted energy-aware scheduling paper to System Assurance Engineering and Management (SCIE, IF: 2.2, 2025).</li>
+                <li><span class="year">✔ </span>-Published "Economics of Corporate Meetings" in Computer Science and Engineering, Vol.15 No.2, 2025.</li>
+                <li><span class="year">✔ </span>-Published heuristic Q-Learning scheduling model in Cluster Computing (SCIE, IF: 4.4, 2025).</li>
+                <li><span class="year">✔ </span>-Published QoS-aware model for workflow scheduling in Cluster Computing (SCIE, IF: 4.4, 2025).</li>
+                <li><span class="year">✔ </span>-Presented hybrid GA + OBL optimization model at AMRIT-2024, Assam Central University, Nov 2024.</li>
+                <li><span class="year">✔ </span>-Presented precedence-aware scheduling with max-flow at ICASET-2024, Lucknow, July 2024.</li>
+                <li><span class="year">✔ </span>-Presented ML-based workflow performance prediction model at ICASET-2024, Lucknow, July 2024.</li>
+                <li><span class="year">✔ </span>-Presented task offloading model in MEC at ICASET-2024, Lucknow, July 2024.</li>
+                <li><span class="year">✔ </span>-Presented Makespan Optimization Technique (MOT) at IDEA 2024, Bhopal, June 2024.</li>
+                <li><span class="year">✔ </span>-Presented improved Max-Min strategy for workflow load balancing at IDEA 2024, Bhopal, June 2024.</li>
+                <li><span class="year">✔ </span>-Delivered invited talk on "Imperative of Research Paper Framework" at IMEC, Sagar, April 2024.</li>
+                <li><span class="year">✔ </span>-Published load balancing strategy in Cluster Computing, Springer (SCIE, IF: 4.4, 2024).</li>
+                <li><span class="year">✔ </span>-Published review on load balancing in Wireless Personal Communication (SCIE, IF: 2.05, 2024).</li>
+                <li><span class="year">✔ </span>-Scheduled invited talk on "Optimization of Resource Provisioning using ML" at SVN University, Feb 2025.</li>
+            </ul>
         </div>
     </div>
+</div>
 
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let newsBox = document.querySelector(".news-content");
-        let newsItems = document.querySelector(".news-items");
-
-        function scrollNews() {
-            if (newsBox.scrollTop + newsBox.clientHeight >= newsItems.clientHeight) {
-                newsBox.scrollTop = 0; // Reset scrolling
-            } else {
-                newsBox.scrollTop += 1; // Scroll smoothly
-            }
-        }
-
-        setInterval(scrollNews, 50); // Adjust speed
-    });
-</script>
 </div>
 <div class="container2">
     <div class="main-heading">
@@ -187,11 +250,9 @@
 
     <!-- Membership Sections -->
     <div class="membership-section">
-        <h2>Experience (More than 12 Years)</h2>
+        <h2>Experience (12+ Years)</h2>
         <ul class="membership-list">
-            <li><span class="year">2013</span> – Assistant Professor Dr. Harisingh Gour Central University</li>
-            <li><span class="year">DCSA</span> –  Department of Computer Science and Applications</li>
-            <li><span class="year">Ongoing</span> – Sagar, MP (31st May 2013- Onwards).</li>
+            <li>31st May 2013- Onwards in the Department of Computer Science and Applications, Dr. Harisingh Gour Central University, Sagar, M.P., India.</li>
         </ul>
     </div>
 
@@ -204,24 +265,111 @@
         </ul>
     </div>
 
-    <div class="membership-section">
-         <h2>Research Area:</h2>
-        <ul class="membership-list">
-            <li>High Performance Computing, Scheduling  Algorithms</li>
-            <li>Machine Learning, Computational Intelligence  </li>
-        </ul>
-         <h2>Subjects Taught::</h2>
-        <ul class="membership-list">
-            <li>Data Structures ,Programming, Design and Analysis of Algorithm</li>
-            <li>Digital Electronic, Cloud Computing. </li>
-        </ul>
-    </div>
+   
 </div>
+<style>
+.scroll-box {
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+  border: 2px solid #007BFF;
+  background-color: #f9fbff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
 
+.fixed-header {
+  padding: 15px 20px;
+  background-color: #e6f0ff;
+  border-bottom: 1px solid #007BFF;
+}
 
- 
+.fixed-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f6548;
+    padding-left: 100px;
+}
 
+.scrollable-content {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: #ffffff;
+  padding-left: 50px;
+}
 
+.scroll-inner {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 40s linear infinite;
+}
+
+@keyframes scrollUp {
+  0%   { top: 0%; }
+  100% { top: -100%; }
+}
+
+.scroll-inner ul {
+  margin: 0;
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+.scroll-inner li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  padding-left: 24px;
+  position: relative;
+}
+
+.scroll-inner li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: green;
+  font-weight: bold;
+}
+</style>
+
+<div class="scroll-box">
+  <!-- Fixed Top Content -->
+  <div class="fixed-header">
+    <h2>Professional Development and Invited Talks</h2>
+    <h2>Orientation/Refresher Course/Seminar/FDP/STC</h2>
+  </div>
+
+  <!-- Automatically Scrolling Content -->
+  <div class="scrollable-content">
+    <div class="scroll-inner">
+     <ul class="membership-list">
+        <li><span class="year">- Participant, (2012)</span> Leadership and Personality Development, Seminar, 9 Days, 10th Jan. 2012-18th Jan. 2012, Galgotias University, Greater Noida (U.P.).</li>
+        <li><span class="year">- Participant, (2014-2015)</span> Orientation Course, 27 Days, 18th Dec. 2014-14th Jan. 2015, UGC-HRDC, Dr. Harisingh Gour Central University, Sagar (M.P.).</li>
+        <li><span class="year">- Participant, (2016-2017)</span> ICT, Refresher Course, 21 Days, 21st Dec. 2016-10th Jan. 2017, UGC-HRDC, Dr. Harisingh Gour Central University, Sagar (M.P.).</li>
+        <li><span class="year">- Participant, (2019)</span> Cyber Security, Faculty Development Program, 5 Days, 14th Oct.-18th Oct. 2019, Dr. Harisingh Gour Central University, Sagar (M.P.) [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2020)</span> Data Sciences, Faculty Development Program, 5 Days, 9th May-13th May 2020, Dr. Harisingh Gour Central University, Sagar (M.P.) [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2020)</span> Cyber Security, Faculty Development Program, 5 Days, 18th May-22nd May 2020, Dr. Harisingh Gour Central University, Sagar (M.P.) [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2020)</span> Artificial Intelligence, Faculty Development Program, 5 Days, 25th May-29th May 2020, Dr. Harisingh Gour Central University, Sagar (M.P.) [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2020)</span> Internet of Things (IoT), Faculty Development Program, 5 Days, 5th Oct.-9th Oct. 2020, BBAU, Lucknow (U.P.) [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2020)</span> Teacher, Teaching and Teacher Education: Processes, Concerns and Prospects, Faculty Development Program, 6 Days, 18th Oct.-23rd Oct. 2020, TLC, Dr. Harisingh Gour Central University, Sagar (M.P.) [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2020)</span> Cloud Technology, Faculty Development Program, 5 Days, 26th Oct.-30th Oct. 2020 [Sponsored by AICTE ATAL Program].</li>
+        <li><span class="year">- Participant, (2021)</span> Use of MATLAB in Research, Short Term Course, 6 Days, 18th Jan.-23rd Jan. 2021, UGC-HRDC, Dr. Harisingh Gour Central University, Sagar (M.P.) [UGC-Sponsored].</li>
+        <li><span class="year">- Invited Talk, (2025)</span> Optimization of Resource Provisioning using Machine Learning in Cloud Platform, 13th International Conference on AI and Big Data, 28th Feb. 2025, SVN University, Sagar (M.P.) [Invited Talk].</li>
+        <li><span class="year">- Invited Talk, (2024)</span> Imperative of Research Paper Framework, 24th April 2024, Infinity Management and Engineering College (IMEC), Sagar (M.P.) [Invited Talk].</li>
+        <li><span class="year">- Invited Talk, (2020)</span> A Study of Performance Metrics for Static Task Scheduling in Multiprocessor System, 8th International Conference on Innovative Research Practices, 27th-28th Feb. 2020, SVN, Sagar (M.P.) [Invited Talk].</li>
+        <li><span class="year">- Resource Person, (2020)</span> Cyber Crime and Computer Network, Institute of Distance Education, 10th Feb. 2020, Dr. Harisingh Gour Central University, Sagar (M.P.) [Resource Person].</li>
+        <li><span class="year">- Resource Person, (2020)</span> ERP, MIS and DBMS, Institute of Distance Education, 12th Feb. 2020, Dr. Harisingh Gour Central University, Sagar (M.P.) [Resource Person].</li>
+        <li><span class="year">- Resource Person, (2021)</span> Evaluation of the Presentation of the Research Proposals, 4th Faculty Induction Programme, 1st March 2021, UGC-HRDC, Dr. Harisingh Gour Central University, Sagar (M.P.) [Resource Person].</li>
+        <li><span class="year">- Resource Person, (2021)</span> Evaluation of Micro-Teaching, Refresher Course on Relation of Indian History with Science and Technology, 13th Sept. 2021, UGC-HRDC, Dr. Harisingh Gour Central University, Sagar (M.P.) [Resource Person].</li>
+        <li><span class="year">- Resource Person, (2021)</span> Research Metrics, Faculty Development Programme on Publication and Research Ethics, 7th-11th Sept. 2021, Department of Commerce, Dr. Harisingh Gour Central University, Sagar (M.P.) [Resource Person, AICTE ATAL Program].</li>
+        <li><span class="year">- Resource Person, (2021)</span> Evaluation of the Presentation of the Research Proposals, Refresher Course on Criminology in 21st Century, 10th Sept. 2021, UGC-HRDC, Dr. Harisingh Gour Central University, Sagar (M.P.) [Resource Person].</li>
+    </ul>
+    </div>
+  </div>
+</div>
    <!-- Map Section -->
    <section class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8680.603183683425!2d78.77496568264726!3d23.827698911486163!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x53f0bc9db8fc188e!2sDr.+Harisingh+Gour+University!5e0!3m2!1sen!2sin!4v1530796101351" 
@@ -253,73 +401,25 @@
                     <a href="https://www.linkedin.com/in/..." target="_blank" aria-label="Follow on LinkedIn"><img src="Img\fb.png" alt="LinkedIn Icon"></a>
                     <a href="https://scholar.google.co.in/citations?user=9DZDbJEAAAAJ&hl=en" target="_blank" aria-label="Google Scholar Profile"><img src="Img\gs.png" alt="Google Scholar Icon"></a>
                 </div>
-                   <div class="counter-container">
-        <div class="counter-box">
-            <i class="icon fas fa-flag"></i>
-            <h2 id="india_visits">0</h2>
-            <p>Indian Visitors</p>
-        </div>
-        <div class="counter-box">
-            <i class="icon fas fa-plane"></i>
-            <h2 id="outside_visits">0</h2>
-            <p>Foreign Visitors</p>
-        </div>
-        <div class="counter-box">
-            <i class="icon fas fa-globe"></i>
-            <h2 id="total_visits">0</h2>
-            <p>Total Visitors</p>
-        </div>
+
+   <div class="counter-container">
+    <div class="counter-box">
+        <i class="icon fas fa-flag"></i>
+        <h2 id="india_visits">0</h2>
+        <p>Indian Visitors</p>
     </div>
-
-<script>
-    // Visitor.js
-
-// Function to fetch user's IP info
-async function getVisitorInfo() {
-    try {
-        const response = await fetch('https://ipapi.co/json/');
-        return await response.json();
-    } catch (error) {
-        console.error('Error fetching visitor info:', error);
-        return null;
-    }
-}
-
-// Function to update counts
-function updateCounters(visitorCountry) {
-    let indiaVisits = parseInt(localStorage.getItem('india_visits')) || 0;
-    let outsideVisits = parseInt(localStorage.getItem('outside_visits')) || 0;
-    let totalVisits = parseInt(localStorage.getItem('total_visits')) || 0;
-
-    if (visitorCountry === 'IN') {
-        indiaVisits += 1;
-    } else {
-        outsideVisits += 1;
-    }
-    totalVisits += 1;
-
-    // Save updated counts
-    localStorage.setItem('india_visits', indiaVisits);
-    localStorage.setItem('outside_visits', outsideVisits);
-    localStorage.setItem('total_visits', totalVisits);
-
-    // Update the HTML
-    document.getElementById('india_visits').innerText = indiaVisits;
-    document.getElementById('outside_visits').innerText = outsideVisits;
-    document.getElementById('total_visits').innerText = totalVisits;
-}
-
-// On page load
-window.addEventListener('load', async () => {
-    const visitorInfo = await getVisitorInfo();
-    if (visitorInfo && visitorInfo.country) {
-        updateCounters(visitorInfo.country);
-    } else {
-        console.error('Could not determine visitor country');
-    }
-});
-
-</script> 
+    <div class="counter-box">
+        <i class="icon fas fa-plane"></i>
+        <h2 id="outside_visits">0</h2>
+        <p>Foreign Visitors</p>
+    </div>
+    <div class="counter-box">
+        <i class="icon fas fa-globe"></i>
+        <h2 id="total_visits">0</h2>
+        <p>Total Visitors</p>
+    </div>
+</div>
+<script src="visitor_counter.js"></script>
             </div>
             
         </div>
