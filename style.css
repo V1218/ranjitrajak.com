@@ -593,7 +593,9 @@ section {
     color: #bda1a1;
     line-height: 1.8;
     margin-bottom: 20px;
+    text-align: justify; /* 👈 Yeh line add ki gayi hai */
 }
+
 
 /* Read More Button */
 .button-theme {
