@@ -843,7 +843,9 @@ section {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 
 }
-
+.membership-span2{
+    color: #012041;
+}
 .membership-section h2 {
     color: #169997;
     margin-left: 20px;
@@ -1053,6 +1055,7 @@ section {
   max-width: 100%;
   margin: 0;
   align-items: center;
+  align-content: center;
 }
 .container4 h1 {
   font-size: 2rem;
@@ -1073,27 +1076,27 @@ section {
 .level-1, .level-2, .level-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 0;
+  gap: 10px;
   justify-items: center;
-  padding: 20px;
-  margin: 20px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .scholar-card {
-  background: #ffffff;
-  border-radius: 12px;
+ background: linear-gradient(135deg, #9ccaeb, #c1c79d);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   padding: 1.5rem;
   align-items: center;
-  width: 100%;
+  width: 95%;
   max-width: 500px; /* Limit card width for better layout */
 }
 
 .scholar-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
@@ -1138,7 +1141,7 @@ section {
 
 /* Tabs Section */
 .tabs {
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     margin: 30px auto;
   }
