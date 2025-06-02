@@ -566,7 +566,7 @@ section {
 
 .text_align_center .full img {
     width: 100%;
-    max-width: 350px;
+    max-width: 320px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
@@ -629,18 +629,37 @@ section {
     }
 }
 
+
+
+
+
 /* Main Section */
 .main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
-    background-color: #d4d695d1;
+     padding: 20px 140px 20px 60px;
+    background-color: #b5d7c6d1;
 }
 
+.slider-container {
+    width: 60%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #e6e6e6;
+    border: 5px solid #fdfdfd2f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
 .container1 {
-    width: 40%;
-    padding: 20px;
+    width: 45%;
+    background: rgb(241, 243, 246);
+    border-radius: 5px; 
+    padding: 40px 50px 40px 70px;
+
 }
 
 .text-content h2 {
@@ -664,10 +683,11 @@ section {
 
 /* Slider */
 .slider-container {
-    width: 50%;
-    height: 300px;
+    width: 47%;
+    height: 340px;
     overflow: hidden;
     position: relative;
+    
 }
 
 .slider-image {
@@ -677,6 +697,7 @@ section {
     object-fit: cover;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+   
 }
 
 .slider-image.active {
@@ -685,7 +706,7 @@ section {
 
 /* Achievements Section */
 .section {
-    padding: 40px;
+    padding: 10px;
     background: linear-gradient(145deg, #093e18, #185c5f);
 }
 
@@ -847,7 +868,7 @@ section {
     color: #012041;
 }
 .membership-section h2 {
-    color: #169997;
+    color: #0d2944;
     margin-left: 20px;
     font-size: 22px;
     padding-bottom: 8px;
@@ -1078,8 +1099,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 10px;
   justify-items: center;
-  padding: 5px;
-  margin: 5px;
+  padding: 15px;
 }
 
 .scholar-card {
@@ -1092,7 +1112,7 @@ section {
   padding: 1.5rem;
   align-items: center;
   width: 95%;
-  max-width: 500px; /* Limit card width for better layout */
+  max-width: 550px; /* Limit card width for better layout */
 }
 
 .scholar-card:hover {
@@ -1115,7 +1135,7 @@ section {
 
 .scholar-info h3 {
   font-size: 1.4rem;
-  color: #003366;
+  color: #071b2e;
   margin-bottom: 8px;
 }
 
@@ -1237,3 +1257,7 @@ section {
     }
   }
  
+.scopus {
+    color: rgba(5, 23, 46, 0.812);
+    font-weight: bold; /* Optional for emphasis */
+}

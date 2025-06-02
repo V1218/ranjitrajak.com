@@ -8,7 +8,7 @@
     <div>
         <nav>
             <ul class="navbar">
-                <li><a href="https://dhsgsu.edu.in/index.php/en/" style="font-size: 20px;">Doctor Harisingh Gour Central University Sagar</a></li> 
+                <li><a href="https://dhsgsu.edu.in/index.php/en/" style="font-size: 24px; font-style: italic;">Doctor Harisingh Gour Central University , Sagar (M.P), India</a></li> 
     </nav></div>
     <header class="header">
         <div class="logo-container">
@@ -40,40 +40,44 @@
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-      color: #333;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    h1, h2 {
-      color: #0a58ca;
-      text-align: center;
-    }
-  </style>
-
-  <div class="container">
-    <h1>Contact Information</h1><br>
-    <div class="contact-info">
-      <p><strong>Department:</strong> Dept. of Computer Science and Applications</p>
-      <p><strong>University:</strong> Dr. Harisingh Gour Central University, Sagar, M.P., India</p>
-      <p><strong>Email:</strong> <a href="mailto:ranjit.jnu@gmail.com">ranjit.jnu@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+919479983806">+91 9479983806</a></p>
+    <div class="main-container">
+         <!-- Container1 Section -->
+        <div class="container1">
+            <div class="text-content">
+                <h2>Dr. Ranjit Rajak (Ph.D., JNU)</h2>
+                <p>Assistant Professor</p>
+                <p>Department of Computer Science and Applications</p>
+                <p>School of Mathematical and Physical Sciences</p>
+                <p>Dr.Harisingh Gour Central University, Sagar (M.P), India</p>
+                <p>Mobile: +91 7223086164</p>
+                <p>Email: rrajak@dhsgsu.edu.in , ranjit.jnu@gmail.com</p>
+                <a href="Updated_CV__RANJIT RAJAK_31-05-2025.pdf" download class="download-btn">Download CV</a>
+            </div>
+        </div>
+        <!-- Slider Section -->
+        <div class="slider-container">
+            <img src="Img\cont01.jpg" alt="Slider Image 1" class="slider-image active">
+            <img src="Img\cont02.jpg" alt="Slider Image 2" class="slider-image">
+            <img src="Img\cont03.jpg" alt="Slider Image 3" class="slider-image">
+           
+        </div>
+        <script>
+            let currentIndex = 0;
+            const images = document.querySelectorAll('.slider-image');
+            
+            function changeImage() {
+                images[currentIndex].classList.remove('active'); // Remove active class from current image
+                currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+                images[currentIndex].classList.add('active'); // Add active class to the next image
+            }
+            
+            setInterval(changeImage, 5000); // Change image every 5 seconds
+            </script>
+       
     </div>
-</div>
-
+    
+  
+</section>
 
     
    <!-- Map Section -->
